@@ -1,0 +1,42 @@
+form.store-selector {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 50px auto;
+  max-width: 500px;
+  padding: 2rem;
+  background: var(--primary-dark);
+  border: 1px solid var(--primary-light);
+  border-radius: 3px;
+}
+form.store-selector > * {
+  font-family: "Karla", sans-serif;
+  text-align: center;
+}
+.store-selector h2 {
+  margin-top: 0px;
+}
+.store-selector input[type="text"] {
+  font-size: 2rem;
+  padding: 5px 0px;
+  margin-bottom: 5px;
+  background: white;
+  border: 1px solid var(--primary-dark);
+  color: var(--primary-light);
+}
+.store-selector input[type="text"]::placeholder {
+  color: rgba(55, 71, 79, 0.2);
+}
+.store-selector button {
+  padding: 5px 0;
+  color: white;
+  border: 1px solid var(--primary-light);
+  background: var(--primary-dark);
+  transition: all 0.3s ease;
+}
+
+.store-selector button:hover {
+  cursor: pointer;
+  background: var(--primary-light);
+}

@@ -1,0 +1,48 @@
+.item-create {
+  padding: 2rem;
+  background: var(--primary-dark);
+  border-radius: 3px;
+  margin-bottom: 2rem;
+}
+.item-create textarea:focus,
+.item-create input:focus,
+.item-create select:focus,
+.item-create button:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+}
+
+.item-create > * {
+  font-family: "Karla", sans-serif;
+  padding: 10px;
+  color: white;
+  border: 1px solid var(--primary-light);
+  background: var(--primary-dark);
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+.item-create > *:hover {
+  background: var(--primary-light);
+}
+
+.item-create select,
+.item-create button {
+  font-weight: bold;
+}
+.item-create input::placeholder,
+.item-create textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.item-create > *:nth-child(1),
+.item-create > *:nth-child(2) {
+  width: calc(33.33% - 1rem);
+  margin-right: 1rem;
+}
+.item-create > *:nth-child(3) {
+  width: calc(33.33%);
+}
+.item-create > *:nth-child(4),
+.item-create > *:nth-child(5),
+.item-create > *:nth-child(6) {
+  width: 100%;
+}

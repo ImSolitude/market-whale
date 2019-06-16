@@ -1,0 +1,46 @@
+.inventory {
+  display: flex;
+  flex-direction: column;
+}
+.inventory h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(179, 229, 252, 0.2);
+}
+.inventory button.load-button {
+  font-family: "Karla", sans-serif;
+  margin-top: 1rem;
+  width: 33.33%;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  border: 1px solid var(--primary-light);
+  background: var(--primary-dark);
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+.inventory button.load-button:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+}
+.inventory button:hover {
+  cursor: pointer;
+  background: var(--primary-light);
+}
+button.logout {
+  cursor: pointer;
+  font-family: "Karla", sans-serif;
+  margin: 1rem 0;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  border: 1px solid var(--primary-light);
+  background: var(--primary-dark);
+  transition: all 0.3s ease;
+}
+button.logout:hover {
+  background: rgba(244, 67, 54, 1);
+  border: 1px solid rgba(244, 67, 54, 1);
+}

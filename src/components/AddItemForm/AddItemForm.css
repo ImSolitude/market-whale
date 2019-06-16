@@ -1,0 +1,47 @@
+.item-add {
+  padding: 2rem;
+  background: var(--primary-dark);
+  border-radius: 3px;
+}
+.item-add textarea:focus,
+.item-add input:focus,
+.item-add select:focus,
+.item-add button:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+}
+
+.item-add > * {
+  font-family: "Karla", sans-serif;
+  padding: 10px;
+  color: white;
+  border: 1px solid var(--primary-light);
+  background: var(--primary-dark);
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+.item-add > *:hover {
+  background: var(--primary-light);
+}
+
+.item-add select,
+.item-add button {
+  font-weight: bold;
+}
+.item-add input::placeholder,
+.item-add textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.item-add > *:nth-child(1),
+.item-add > *:nth-child(2) {
+  width: calc(33.33% - 1rem);
+  margin-right: 1rem;
+}
+.item-add > *:nth-child(3) {
+  width: calc(33.33%);
+}
+.item-add > *:nth-child(4),
+.item-add > *:nth-child(5),
+.item-add > *:nth-child(6) {
+  width: 100%;
+}

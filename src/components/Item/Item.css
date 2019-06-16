@@ -1,0 +1,102 @@
+.list-of-items {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+.single-item {
+  padding: 1rem 1rem 1rem 0;
+  background: var(--primary-dark);
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin-bottom: 5px;
+  border: 1px solid transparent;
+  clear: both;
+  overflow: hidden;
+}
+.single-item:not(.disabled):hover {
+  cursor: pointer;
+  border: 1px solid var(--primary-light);
+  box-sizing: border-box;
+}
+.single-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.single-item img {
+  position: relative;
+  width: 150px;
+  float: left;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top: 1px solid var(--primary-light);
+  border-bottom: 1px solid var(--primary-light);
+  border-right: 1px solid var(--primary-light);
+  z-index: 5;
+}
+.single-item h3 {
+  position: relative;
+  right: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(38, 50, 56, 1);
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  z-index: 1;
+}
+.single-item h3 span.price {
+  font-size: 1rem;
+  padding: 2px 4px;
+  background: var(--primary-dark);
+  border-radius: 3px;
+}
+.single-item p.desc {
+  padding-left: calc(1rem - 5px);
+  margin: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.single-item button.add-to-cart {
+  font-family: "Karla", sans-serif;
+  margin-left: calc(1rem - 5px);
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  border: 1px solid var(--primary-light);
+  background: var(--primary-dark);
+  transition: all 0.3s ease;
+}
+.single-item button.add-to-cart:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+}
+
+.single-item button.add-to-cart:hover {
+  cursor: pointer;
+  background: var(--primary-light);
+}
+.single-item.disabled {
+  cursor: not-allowed;
+}
+.single-item.disabled > *:not(button) {
+  /* opacity: 0.2; */
+  cursor: not-allowed;
+  user-select: none;
+  filter: blur(0.8px);
+  opacity: 0.5;
+}
+
+.single-item button.add-to-cart[disabled] {
+  cursor: not-allowed;
+  color: white;
+  background: rgba(244, 67, 54, 1);
+  border: none;
+  padding: 2px;
+  z-index: 999;
+  position: relative;
+  transform: rotate(-10deg) scale(2) translateX(50%) translateY(-50%);
+}
